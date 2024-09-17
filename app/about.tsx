@@ -25,7 +25,7 @@ function About() {
         
         {/* 3 blobs */}
         <div className="absolute top-0 left-0">
-            <svg width="627" height="298" viewBox="0 0 627 298" fill="none" xmlns="http://www.w3.org/2000/svg" className="hero-background-asset1">
+            <svg width="627" height="298" viewBox="0 0 627 298" fill="none" xmlns="http://www.w3.org/2000/svg" className="hero-background-asset1" >
                 <path d="M0 0.000366211V217.501C9.16667 229.834 43.1934 302.693 74 297.5C104.807 292.308 144.252 300 166 166.501C192 87.0005 314.664 79.5266 386 101.501C498 136 638.333 35.667 626 0.000366211H0Z" fill="rgb(168,104,240)" fill-opacity="0.6"></path>
             </svg>
         </div>
@@ -45,7 +45,7 @@ function About() {
         </div>
         
         <div className="text-white text-xl mb-2">
-            <div className="inline" data-aos="fade-up" data-aos-delay={50}>Welcome to <span className="text-[rgb(168,104,240)] font-bold">Waterloo's largest</span> high school engineering community</div>
+            <div className="inline" data-aos="fade-up" data-aos-delay={50}>Welcome to <span className="text-[rgb(168,104,240)] font-bold">Waterloo&apos;s largest</span> high school engineering community</div>
         </div>
         <h1 className="text-5xl md:text-7xl text-[rgb(101,77,228)] font-bold mb-6" data-aos="fade-up" data-aos-delay={150}>KW Sandbox</h1>
         <p className="text-white text-xl mb-10" data-aos="fade-up" data-aos-delay={350}>Community • Engineering • Innovation • In-person Event</p>
@@ -68,8 +68,8 @@ function About() {
             Learn More
         </a>
     </div>
-    <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
-  </div>
+    <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js" async></script>
+  </div> 
   );
 }
 
