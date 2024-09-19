@@ -101,7 +101,7 @@ function Navbar() {
           >
             ☰
           </button>
-          <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
+          <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js" async></script>
         </div>
       {/* Mobile sidebar toggle button */}
 
