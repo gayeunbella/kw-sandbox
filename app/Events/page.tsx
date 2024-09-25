@@ -45,9 +45,11 @@ export default function Events() {
   };
 
   return (
-    <div className="h-screen w-full bg-gray-800 flex flex-col">
-      <h1 className="text-4xl font-bold text-center py-8">Events</h1>
-      <div className="flex-grow">
+    <div className="min-h-screen w-full bg-black flex flex-col px-4 md:px-8">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-clip-text pb-4 text-transparent bg-gradient-to-r from-[#654DE4] to-[#6549E4] py-16">
+          Events
+        </h2>      
+        <div className="flex-grow w-full">
         <Slider {...settings} className="h-full">
           {events.map((event) => (
             <div key={event.id} className="h-full px-4">
