@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../navbar";
 import { motion, AnimatePresence } from "framer-motion";
-import { GradualSpacing } from "./components/gradual";
 import {
   Accordion,
   AccordionContent,
