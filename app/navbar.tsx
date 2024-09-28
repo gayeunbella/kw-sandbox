@@ -28,7 +28,7 @@ function Navbar() {
       <nav className={`fixed z-40 left-0 top-0 p-4 w-full transition-all duration-100 ${scrollY === 0 ? "border-none" : "border-b-[1px] border-slate-500 bg-slate-950"}`}> {/* style = {{backgroundColor: "rgb(101,77,228)"}} */}
         <div className="max-w-6xl mx-auto space-x-10 flex items-center justify-between">
           <div>
-            <a className="flex items-center text-white font-bold text-lg" href="#main">
+            <a className="flex items-center text-white font-bold text-lg" href="home">
               <Image
                 src="/logo.png"
                 alt="logo"
@@ -39,7 +39,7 @@ function Navbar() {
             </a>
           </div>
           <div className="hidden md:flex space-x-7 text-white text-base font-semibold">
-            <a className="relative group" href="#about">
+            <a className="relative group" href="about">
               <div className="group-hover:cursor-pointer">About</div>
               <div className="absolute bottom-0 left-0 w-full h-1 bg-transparent group-hover:bg-white transition-all duration-300"></div>
             </a>
@@ -51,7 +51,7 @@ function Navbar() {
               <div className="group-hover:cursor-pointer">Sponsors</div>
               <div className="absolute bottom-0 left-0 w-full h-1 bg-transparent group-hover:bg-white transition-all duration-300"></div>
             </a>
-            <a className="relative group" href="#faq">
+            <a className="relative group" href="faq">
               <div className="group-hover:cursor-pointer">FAQs</div>
               <div className="absolute bottom-0 left-0 w-full h-1 bg-transparent group-hover:bg-white transition-all duration-300"></div>
             </a>
