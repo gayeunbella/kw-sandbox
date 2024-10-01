@@ -25,7 +25,7 @@ export default function Footer() {
               KW Sandbox
             </h3>
             <p className="text-sm">
-              Waterloo's largest high school engineering community
+              Waterloo&apos;s largest high school engineering community
             </p>
           </div>
           <div>
