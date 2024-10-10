@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 
 function About() {
   const [scrollY, setScrollY] = useState(0);
