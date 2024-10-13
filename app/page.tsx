@@ -1,18 +1,20 @@
-'use client'
-import Navbar from "./navbar";
-import About from './about';
-import Team from './team';
+"use client";
 
-// color palette (from brightest to darkest): (118, 201, 255) (101,77,228) (61, 23, 132) (37, 22, 56) (17, 23, 27)
+import React from "react";
+import Navbar from "./navbar";
+import Footer from "./footer";
+import FAQ from "./faq";
+import About from "./about";
 
 export default function Home() {
   return (
-    <main className="flex w-full min-h-screen flex-col items-center justify-between">
-      <Navbar/>
-      <div className="z-30">
-        <About/>
-        <Team/>
-      </div>
-    </main>
+    <div className="flex flex-col min-h-screen relative">
+      <Navbar />
+      <main className="flex-grow">
+        <About />
+        <FAQ />
+      </main>
+      <Footer />
+    </div>
   );
 }
