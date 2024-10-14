@@ -5,6 +5,7 @@ import Navbar from "./navbar";
 import Footer from "./footer";
 import FAQ from "./faq";
 import About from "./about";
+import Team from "./team";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Navbar />
       <main className="flex-grow">
         <About />
+        <Team />
         <FAQ />
       </main>
       <Footer />
