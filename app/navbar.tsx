@@ -48,23 +48,23 @@ function Navbar() {
           </a>
         </div>
         <div className="hidden md:flex space-x-7 text-white text-base font-semibold">
-          <a className="relative group" href="about">
+          <a className="relative group" href="./about">
             <div className="group-hover:cursor-pointer">About</div>
             <div className="absolute bottom-0 left-0 w-full h-1 bg-transparent group-hover:bg-white transition-all duration-300"></div>
           </a>
-          <a className="relative group" href="#previous-events">
+          <a className="relative group" href="./previous-events">
             <div className="group-hover:cursor-pointer">Events</div>
             <div className="absolute bottom-0 left-0 w-full h-1 bg-transparent group-hover:bg-white transition-all duration-300"></div>
           </a>
-          <a className="relative group" href="#sponsors">
+          <a className="relative group" href="./sponsors">
             <div className="group-hover:cursor-pointer">Sponsors</div>
             <div className="absolute bottom-0 left-0 w-full h-1 bg-transparent group-hover:bg-white transition-all duration-300"></div>
           </a>
-          <a className="relative group" href="faq">
+          <a className="relative group" href="./faq">
             <div className="group-hover:cursor-pointer">FAQs</div>
             <div className="absolute bottom-0 left-0 w-full h-1 bg-transparent group-hover:bg-white transition-all duration-300"></div>
           </a>
-          <a className="relative group" href="#team">
+          <a className="relative group" href="./team">
             <div className="group-hover:cursor-pointer">Team</div>
             <div className="absolute bottom-0 left-0 w-full h-1 bg-transparent group-hover:bg-white transition-all duration-300"></div>
           </a>
