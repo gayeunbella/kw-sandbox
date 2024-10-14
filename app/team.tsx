@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from "react";
+import Image from "next/image";
 
 const leaders = [
   {name: "Nikolaus Fischmesiter", description: "Co-President", image: "/Nikolaus.png", url: "https://www.linkedin.com/in/nikolaus-fischmeister-aaa2b723b/"},
@@ -23,9 +24,9 @@ const execs = [
 function Team() {
   const [user, setUser] = useState({});
 
-  const handleUserHover = (v) => {
-    setUser(v);
-  };
+  // const handleUserHover = (v) => {
+  //   setUser(v);
+  // };
 
   return (
     <div id="team" className="w-full bg-gray-900 flex flex-col justify-center items-center md:p-8 py-16 md:pb-24">
@@ -35,8 +36,6 @@ function Team() {
           <div key={index} className="pb-4 text-center justify-items-center">
             <a
               className="mx-auto flex justify-center w-48 h-48 md:w-36 md:h-36 rounded-full bg-blue-500 m-2 md:mx-10"
-              // onMouseEnter={() => handleUserHover(v)}
-              // onMouseLeave={() => setUser({})}
               href={v.url}
             >
               <Image
@@ -81,16 +80,6 @@ function Team() {
           </div>
         ))}
       </div>
-      {/* <div className="flex w-11/12 flex-wrap justify-center text-white mt-5">
-          {JSON.stringify(user) !== "{}" ? 
-            <div>
-              <span>{user.name}: {user.description}</span>
-            </div> : 
-            <div>
-              Hover to see the user!
-            </div>
-          }
-      </div> */}
     </div>
   );
 }
