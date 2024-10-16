@@ -1,6 +1,7 @@
 import Image from "next/image";
 import NextNavbar from "./components/navbar";
 import Sponsor from "./Sponsor/page";
+import Events from "./Events/page";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         </div>
       </div>
       <Sponsor />
+      <Events />
     </main>
   );
 }
