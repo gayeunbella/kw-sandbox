@@ -1,5 +1,5 @@
-'use client'
-import React, { useState, useEffect } from 'react';
+"use client";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 const Navbar: React.FC = () => {
@@ -24,15 +24,17 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className={`fixed z-40 left-0 top-0 bg-gray-900 p-4 w-full transition-all duration-100 ${scrollY === 0 ? "border-none" : "border-b-[1px] border-slate-500 bg-slate-950"}`}>
-      <div className="max-w-5xl justify-start mx-auto flex items-center">
-        <div>
-          <a className="flex items-center text-white font-bold text-lg" href="#main">
+    <nav
+      className={`fixed z-40 left-0 top-0 bg-gray-900 p-4 w-full transition-all duration-100 ${scrollY === 0 ? "border-none" : "border-b-[1px] border-slate-500 bg-slate-950"}`}
+    >
+      <div className="justify-between mx-auto flex items-center">
+        <div className="flex justify-start">
+          <a className="flex text-white font-bold text-lg mr-8 " href="#main">
             <Image
-              src="./public/kwLogo.png"
+              src="/kwLogo.png"
               alt="logo"
-              width={60}
-              height={60}
+              width={100}
+              height={100}
               unoptimized
             />
           </a>
@@ -61,40 +63,62 @@ const Navbar: React.FC = () => {
         </div>
 
         <button
-          className="md:hidden text-white px-2 py-1 rounded"
+          className="md:hidden text-white p-2 rounded text-3xl focus:outline-none"
           onClick={toggleSidebar}
+          aria-label="Open menu"
         >
-          ☰
+          <span className="w-8 h-8 flex items-center justify-center">☰</span>
         </button>
-        <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
       </div>
 
-      {/* Mobile sidebar */}
       <div
-        className={`fixed z-40 left-0 top-0 h-screen text-center md:hidden bg-gray-700 text-white p-4 fixed top-0 left-0 transform ${
-          isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
+        className={`fixed z-40 h-screen text-center md:hidden bg-gray-700 text-white p-4 top-0 left-0 transform ${
+          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         } w-full h-full transition-transform duration-300`}
       >
         <button
-          className="absolute top-4 right-4 text-white px-2 py-1 rounded"
+          className="absolute top-4 right-4 text-white p-2 rounded text-3xl focus:outline-none"
           onClick={toggleSidebar}
+          aria-label="Close menu"
         >
-          ✖
+          <span className="block w-8 h-8 items-center justify-center">✖</span>
         </button>
-        <div className="mt-16 text-xl underline"><b>Navigation</b></div>
-        <a onClick={toggleSidebar} href="#our-mission" className="block hover:bg-blue-700 py-4 rounded mt-4">
+        <div className="mt-16 text-xl underline">
+          <b>Navigation</b>
+        </div>
+        <a
+          onClick={toggleSidebar}
+          href="#our-mission"
+          className="block hover:bg-blue-700 py-4 rounded mt-4"
+        >
           <b>About</b>
         </a>
-        <a onClick={toggleSidebar} href="#previous-events" className="block hover:bg-blue-700 py-4 rounded">
+        <a
+          onClick={toggleSidebar}
+          href="#previous-events"
+          className="block hover:bg-blue-700 py-4 rounded"
+        >
           <b>Events</b>
         </a>
-        <a onClick={toggleSidebar} href="#sponsors" className="block hover:bg-blue-700 py-4 rounded">
+        <a
+          onClick={toggleSidebar}
+          href="#sponsors"
+          className="block hover:bg-blue-700 py-4 rounded"
+        >
           <b>Sponsors</b>
         </a>
-        <a onClick={toggleSidebar} href="#faq" className="block hover:bg-blue-700 py-4 rounded">
+        <a
+          onClick={toggleSidebar}
+          href="#faq"
+          className="block hover:bg-blue-700 py-4 rounded"
+        >
           <b>FAQs</b>
         </a>
-        <a onClick={toggleSidebar} href="#team" className="block hover:bg-blue-700 py-4 rounded">
+        <a
+          onClick={toggleSidebar}
+          href="#team"
+          className="block hover:bg-blue-700 py-4 rounded"
+        >
           <b>Team</b>
         </a>
       </div>

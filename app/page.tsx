@@ -1,25 +1,31 @@
 import Image from "next/image";
-import NextNavbar
- from "./components/navbar";
+import NextNavbar from "./components/navbar";
+import Sponsor from "./Sponsor/page";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between bg-black p-24">
-      <div className="z-10 w-full items-center justify-between font-mono lg:flex top-0 left-0">
-
-        <NextNavbar>
-
-        </NextNavbar>
+    <main className="min-h-screen bg-black">
+      <NextNavbar />
+      <div className="flex-1 flex flex-col items-center justify-center p-4 h-screen">
+        <div className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] px-4 inline-block">
+          <span
+            className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mr-2"
+            style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
+          >
+            KW
+          </span>
+          <Image
+            src="/designAssets.png"
+            alt="KW Sandbox"
+            width={600}
+            height={150}
+            layout="responsive"
+            priority
+            className="object-contain"
+          />
+        </div>
       </div>
-
-      <div className="absolute inset-y-1/2">
-        <Image
-          src="/designAssets.png"
-          alt="KW Sandbox"
-          width={500}
-          height={100}
-          priority
-        />
-      </div>
+      <Sponsor />
     </main>
   );
 }
