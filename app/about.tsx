@@ -24,7 +24,7 @@ function About() {
   }, []);
 
   return (
-    <>
+    <div id = "about">
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 bg-[rgb(168,104,240)] z-50"
         style={{ scaleX }}
@@ -142,7 +142,7 @@ function About() {
           </a>
         </motion.div>
       </motion.div>
-    </>
+    </div>
   );
 }
 
