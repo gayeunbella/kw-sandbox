@@ -123,38 +123,38 @@ function Navbar() {
         </div>
         <a
           onClick={toggleSidebar}
-          href="#our-mission"
+          href="About"
           className="block hover:bg-blue-700 py-4 rounded mt-4"
         >
           <b>About</b>
         </a>
         <a
           onClick={toggleSidebar}
-          href="#previous-events"
+          href="Events"
           className="block hover:bg-blue-700 py-4 rounded"
         >
           <b>Events</b>
         </a>
         <a
           onClick={toggleSidebar}
-          href="#sponsors"
+          href="Sponsors"
           className="block hover:bg-blue-700 py-4 rounded"
         >
           <b>Sponsors</b>
         </a>
         <a
           onClick={toggleSidebar}
-          href="#faq"
-          className="block hover:bg-blue-700 py-4 rounded"
-        >
-          <b>FAQs</b>
-        </a>
-        <a
-          onClick={toggleSidebar}
-          href="#team"
+          href="Team"
           className="block hover:bg-blue-700 py-4 rounded"
         >
           <b>Team</b>
+        </a>
+        <a
+          onClick={toggleSidebar}
+          href="FAQ"
+          className="block hover:bg-blue-700 py-4 rounded"
+        >
+          <b>FAQs</b>
         </a>
       </div>
     </nav>

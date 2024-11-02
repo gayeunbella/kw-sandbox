@@ -15,9 +15,9 @@ export default function Home() {
       <Navbar />
       <main className="flex-grow">
         <About />
+        <Team />
         <FAQ />
       </main>
-      <Team />
       <Footer />
     </div>
   );
