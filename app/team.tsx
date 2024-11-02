@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const leaders = [
   {name: "Nikolaus Fischmesiter", description: "Co-President", image: "/Nikolaus.png", url: "https://www.linkedin.com/in/nikolaus-fischmeister-aaa2b723b/"},
-  {name: "Ritam Mukherjee", description: "Co-President", image: "/Ritam.png", url: ""},
+  {name: "Ritam Mukherjee", description: "Co-President", image: "/emptyPfp.png", url: ""},
   {name: "Rehat Kaur Jammu", description: "Logistics Co-Head", image: "/Rehat.png", url: "https://www.linkedin.com/in/rehat-kaur-jammu/"},
   {name: "Clara Choi", description: "Logistics Co-Head", image: "/Clara.png", url: "https://www.linkedin.com/in/clara-choi-5a0b64285/"},
   {name: "Li Xing Yin", description: "Finance Head", image: "/Li Xing.png", url: "https://www.linkedin.com/in/lixingyin/"},
@@ -17,16 +17,16 @@ const execs = [
   {name: "Claire Tran", description: "Finance Exec", image: "/Claire.png", url: "https://www.linkedin.com/in/claire-tran-348026318/"},
   {name: "Eddie Wong", description: "Finance Exec", image: "/Eddie.png", url: ""},
   {name: "Cindy Ma", description: "Marketing Exec", image: "/Cindy.png", url: "https://www.linkedin.com/in/cindy-ma-07ba38307/"},
-  {name: "Hamza Ammar", description: "Tech Exec", image: "/Hamza.png", url: "https://www.linkedin.com/in/hamzakammar/"},
+  {name: "Hamza Ammar", description: "Tech Exec", image: "/emptyPfp.png", url: "https://www.linkedin.com/in/hamzakammar/"},
   {name: "Matthew Singer", description: "Tech Exec", image: "/Matthew.png", url: "https://www.linkedin.com/in/matthewsingerr/"}
 ];
 
 function Team() {
   const [user, setUser] = useState({});
 
-  // const handleUserHover = (v) => {
-  //   setUser(v);
-  // };
+  const handleUserHover = (v) => {
+    setUser(v);
+  };
 
   return (
     <div id="team" className="w-full bg-gray-900 flex flex-col justify-center items-center md:p-8 py-16 md:pb-24">
@@ -60,8 +60,8 @@ function Team() {
           <div key={index} className="pb-4 text-center justify-items-center">
             <a
               className="mx-auto flex justify-center w-48 h-48 md:w-36 md:h-36 rounded-full bg-blue-500 m-2 md:mx-10"
-              // onMouseEnter={() => handleUserHover(v)}
-              // onMouseLeave={() => setUser({})}
+              onMouseEnter={() => handleUserHover(v)}
+              onMouseLeave={() => setUser({})}
               href={v.url}
             >
               <Image

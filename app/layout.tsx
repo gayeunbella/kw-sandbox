@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "KW Sandbox",
   description: "KW Sandbox Official Website",
+  
 };
 
 export default function RootLayout({
@@ -16,6 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" href="/sandboxlp.ico" sizes="any" />
       <body className={inter.className}>{children}</body>
     </html>
   );
