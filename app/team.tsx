@@ -29,7 +29,7 @@ function Team() {
   };
 
   return (
-    <div id="team" className="w-full bg-gray-900 flex flex-col justify-center items-center md:p-8 py-16 md:pb-24">
+    <div id="team" className="w-full flex flex-col justify-center items-center md:p-8 py-16 md:pb-24">
       <h2 className="text-white text-2xl font-bold p-2 rounded-lg mb-4">Meet the Team</h2>
       <div className="md:flex w-full md:w-11/12 flex-wrap justify-center">
         {leaders.map((v, index) => (
