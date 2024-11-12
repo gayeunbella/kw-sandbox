@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const leaders = [
   {name: "Nikolaus Fischmesiter", description: "Co-President", image: "/Nikolaus.png", url: "https://www.linkedin.com/in/nikolaus-fischmeister-aaa2b723b/"},
-  {name: "Ritam Mukherjee", description: "Co-President", image: "/emptyPfp.png", url: ""},
+  {name: "Ritam Mukherjee", description: "Co-President", image: "/emptyPfp.jpg", url: ""},
   {name: "Rehat Kaur Jammu", description: "Logistics Co-Head", image: "/Rehat.png", url: "https://www.linkedin.com/in/rehat-kaur-jammu/"},
   {name: "Clara Choi", description: "Logistics Co-Head", image: "/Clara.png", url: "https://www.linkedin.com/in/clara-choi-5a0b64285/"},
   {name: "Li Xing Yin", description: "Finance Head", image: "/Li Xing.png", url: "https://www.linkedin.com/in/lixingyin/"},
@@ -14,10 +14,10 @@ const leaders = [
 
 const execs = [
   {name: "Brian Tram", description: "Logistics Exec", image: "/Brian.png", url: "https://www.linkedin.com/in/brian-tram/"},
-  {name: "Claire Tran", description: "Finance Exec", image: "/Claire.png", url: "https://www.linkedin.com/in/claire-tran-348026318/"},
-  {name: "Eddie Wong", description: "Finance Exec", image: "/Eddie.png", url: ""},
+  {name: "Claire Tran", description: "Finance Exec", image: "/emptyPfp.jpg", url: "https://www.linkedin.com/in/claire-tran-348026318/"},
+  {name: "Eddie Wong", description: "Finance Exec", image: "/Eddie.webp", url: ""},
   {name: "Cindy Ma", description: "Marketing Exec", image: "/Cindy.png", url: "https://www.linkedin.com/in/cindy-ma-07ba38307/"},
-  {name: "Hamza Ammar", description: "Tech Exec", image: "/emptyPfp.png", url: "https://www.linkedin.com/in/hamzakammar/"},
+  {name: "Hamza Ammar", description: "Tech Exec", image: "/emptyPfp.jpg", url: "https://www.linkedin.com/in/hamzakammar/"},
   {name: "Matthew Singer", description: "Tech Exec", image: "/Matthew.png", url: "https://www.linkedin.com/in/matthewsingerr/"}
 ];
 
