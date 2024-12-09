@@ -26,7 +26,7 @@ function About() {
   return (
     <>
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1 bg-[rgb(168,104,240)] z-50"
+        className="fixed top-0 left-0 right-0 h-1 bg-[rgb(14,18,29)] z-50"
         style={{ scaleX }}
       />
       <motion.div

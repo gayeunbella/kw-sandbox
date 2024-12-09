@@ -9,13 +9,14 @@ import About from "./about";
 import Team from "./team";
 import Image from "next/image";
 import NextNavbar from "./components/navbar";
+import Navbar from "./navbar";
 import Sponsor from "./Sponsor/page";
 import Events from "./Events/page";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-black relative">
-      <NextNavbar />
+      <Navbar />
       <About/>
       {/* <div className="flex-1 flex flex-col items-center justify-center p-4 h-screen">
         <div className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] px-4 inline-block">
