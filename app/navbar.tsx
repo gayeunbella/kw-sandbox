@@ -26,7 +26,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`fixed z-50 left-0 top-0 p-4 w-full transition-all duration-100 ${
+      className={`fixed z-50 left-0 top-0 p-4 w-full transition-all duration-100 m-16${
         scrollY === 0
           ? "bg-transparent"
           : "border-b-[1px] border-slate-500 bg-[rgba(37,22,56,0.9)]"
