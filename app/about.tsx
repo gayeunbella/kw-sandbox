@@ -38,7 +38,7 @@ function About() {
       >
         <div
           className="fixed inset-0 z-0"
-          style={{ backgroundColor: "rgb(37, 22, 56)" }}
+          style={{ backgroundColor: "rgb(14,18,29)" }}
         >
           {/* 3 blobs */}
           <div className="absolute top-0 left-0">
@@ -58,7 +58,7 @@ function About() {
             </svg>
           </div>
 
-          <div className="absolute bottom-0 left-0 flex align-item flex-end">
+          {/* <div className="absolute bottom-0 left-0 flex align-item flex-end">
             <svg
               width="500"
               height="232"
@@ -73,7 +73,7 @@ function About() {
                 fillOpacity="0.6"
               ></path>
             </svg>
-          </div>
+          </div> */}
 
           {/* the blob on the right side */}
           <div className={"absolute top-0 right-0 flex justify-content flex-end"}>
